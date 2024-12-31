@@ -29,7 +29,7 @@ function updateDeleteCityEventListener() {
     document
       .querySelectorAll('.deleteCity')
       [i].addEventListener('click', function () {
-        fetch(`https://weather-backend-mu-five.vercel.app/weather${this.id}`, {
+        fetch(`https://weather-backend-mu-five.vercel.app/weather/${this.id}`, {
           method: 'DELETE',
         })
           .then((response) => response.json())
